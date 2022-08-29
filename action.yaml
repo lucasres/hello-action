@@ -1,0 +1,8 @@
+name: "hello-action"
+description: "teste go lang envorimnent"
+
+runs:
+  using: composite
+  steps:
+  - run: go run main.go
+    shell: bash
