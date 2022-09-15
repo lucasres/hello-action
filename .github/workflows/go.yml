@@ -20,4 +20,4 @@ jobs:
     - name: Go hello
       uses: lucasres/hello-action@v4
       with:
-        greet: ${{ secrets.TEST_ENV }}
+        greet: "ola mundo input"
