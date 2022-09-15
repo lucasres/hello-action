@@ -4,5 +4,5 @@ description: "teste go lang envorimnent"
 runs:
   using: composite
   steps:
-  - run: go run main.go
+  - run: echo $TEST_ENV && go run main.go
     shell: bash
