@@ -18,4 +18,4 @@ jobs:
         go-version: 1.18
 
     - name: Go hello
-      uses: lucasres/hello-action@v1
+      uses: lucasres/hello-action@v2
