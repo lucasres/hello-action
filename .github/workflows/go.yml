@@ -18,6 +18,6 @@ jobs:
         go-version: 1.18
 
     - name: Go hello
-      uses: lucasres/hello-action@v3
+      uses: lucasres/hello-action@v4
       with:
         greet: ${{ secrets.TEST_ENV.TESTE_ENV }}
