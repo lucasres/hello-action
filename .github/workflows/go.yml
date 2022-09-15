@@ -20,4 +20,4 @@ jobs:
     - name: Go hello
       uses: lucasres/hello-action@v3
       with:
-        who-to-greet: ${{ TESTE_ENV.TESTE_ENV }}
+        who-to-greet: ${{ secrets.TEST_ENV.TESTE_ENV }}
