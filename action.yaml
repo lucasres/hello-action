@@ -2,7 +2,7 @@ name: "hello-action"
 description: "teste go lang envorimnent"
 
 inputs:
-  who-to-greet: 
+  greet: 
     description: 'Teste de inputs'
     required: true
     # default: 'World'
@@ -10,5 +10,5 @@ inputs:
 runs:
   using: composite
   steps:
-  - run: echo $TEST_ENV && go run main.go
+  - run: echo "${{ inputs.greet }}" && go run main.go
     shell: bash
