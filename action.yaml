@@ -1,6 +1,12 @@
 name: "hello-action"
 description: "teste go lang envorimnent"
 
+inputs:
+  who-to-greet: 
+    description: 'Teste de inputs'
+    required: true
+    # default: 'World'
+
 runs:
   using: composite
   steps:
