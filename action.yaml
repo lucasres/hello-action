@@ -10,5 +10,5 @@ inputs:
 runs:
   using: composite
   steps:
-  - run: echo "${{ inputs.greet }}" && go run main.go
+  - run: go run main.go -t ${{ inputs.greet }}
     shell: bash
