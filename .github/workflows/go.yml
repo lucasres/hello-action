@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: TESTE_ENV
     steps:
     - uses: actions/checkout@v3
 
@@ -20,4 +21,4 @@ jobs:
     - name: Go hello
       uses: lucasres/hello-action@v4
       with:
-        greet: "ola mundo input"
+        greet: ${{ secrets.TESTE_ENV }}
